@@ -1,0 +1,102 @@
+/* Стили для мобильной версии. Вертикальное положение */
+
+@media only screen and (max-width: 649px) {
+  .block {
+    width: 100%;
+  }
+}
+
+/* Стили для всех остальных устройств. */
+
+@media only screen and (min-width: 650px) {
+  .block:first-child {
+    width: 100%;
+  }
+
+  .block:nth-child(n + 2):nth-child(-n + 5) {
+    width: calc(100% / 3);
+  }
+
+  .block:last-child {
+    width: calc(100% / 3 * 2);
+  }
+}
+
+.popup-container {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(0,0,0,0.4);
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 200px;
+  width: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid darkslateblue;
+  border-radius: 10px;
+  background-color: lavender;
+}
+
+.popup-close-button {
+  position: absolute;
+  top: 5%;
+  left: 85%;
+
+  padding: 0;
+  height: 30px;
+  width: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background-color: transparent;
+}
+
+.block-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100px;
+  border: 1px solid black;
+}
+
+.block-center-left {
+  background-color: lavender;
+}
+
+.block-center-middle {
+  background-color: mediumpurple;
+  border-style: dashed;
+}
+
+.block-center-right {
+  background-color: darkslateblue;
+}
+
+.hidden {
+  display: none;
+}
+

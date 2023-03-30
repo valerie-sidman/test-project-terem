@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+</head>
+<body>
+
+<div class="form-container">
+    <form method="get" class="form">
+        <div class="form-select-group">
+            <label for="firstList">Первый список:</label>
+            <select id="firstList" name="firstList" class="select-element">
+                <option selected value="">выбрать число</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="secondList">Второй список:</label>
+            <select id="secondList" name="secondList" class="select-element">
+                <option selected value="">выбрать число</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="thirdList">Третий список:</label>
+            <select id="thirdList" name="thirdList" class="select-element">
+                <option selected value="">выбрать число</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="fourthList">Четвертый список:</label>
+            <select id="fourthList" name="fourthList" class="select-element">
+                <option selected value="">выбрать число</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="fifthList">Пятый список:</label>
+            <select id="fifthList" name="fifthList" class="select-element">
+                <option selected value="">выбрать число</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <div class="form-input-group">
+            <label for="firstField">Поле 1:</label>
+            <input type="text" id="firstField" name="firstField" class="input-element">
+
+            <label for="secondField">Поле 2:</label>
+            <input type="text" id="secondField" name="secondField" class="input-element">
+        </div>
+
+        <button type="submit" class="button-submit">Отправить данные</button>
+    </form>
+</div>
+
+<div class="info-container">
+    <span>Отправленные данные в формате JSON:</span>
+    <div class="received-data"></div>
+</div>
+
+<script src="script/form.js"></script>
+</body>
+</html>
